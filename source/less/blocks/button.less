@@ -1,0 +1,41 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+
+  vertical-align: top;
+  text-align: center;
+
+  font-family: "Georgia", serif;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 400;
+  color: @button-text;
+  letter-spacing: 1px;
+
+  border-radius: 30px;
+}
+
+.button--pink {
+  background-color: @bg-button-pink;
+}
+
+.button--pink:hover {
+  background-color: @button-hover;
+}
+
+.button--still {
+  background-color: transparent;
+  border: 2px solid @bg-button-pink;
+}
+
+.button--round {
+  box-sizing: border-box;
+  width: 51px;
+  height: 51px;
+  background-color: transparent;
+
+  border: 2px solid @bg-button-pink;
+  border-radius: 50%;
+
+  cursor: pointer;
+}

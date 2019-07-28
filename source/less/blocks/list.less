@@ -1,0 +1,24 @@
+.list__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .card__wrap {
+    margin-left: 0;
+  }
+}
+
+.page--pets .list__item {
+  margin-right: 30px;
+  margin-bottom: 34px;
+}
+
+.page--pets .list__item:nth-child(4n),
+.page--pets .list__item:nth-child(8n) {
+  margin-right: 0;
+}

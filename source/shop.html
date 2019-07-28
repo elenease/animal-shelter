@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animal Shelter Pets</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+
+<body class="page page--pets">
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__nav-container">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link" href="index.html" title="On the homepage">
+          <p class="page-header__logo-name">Cozy House</p>
+          <p class="page-header__logo-desc">Shelter for pets in Boston</p>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html#about">About the shelter</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="shop.html">Our pets</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html#help">To help the shelter</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Cozy House: our pets.</h1>
+
+    <section class="pets">
+      <div class="container">
+        <h2 class="pets__title">Our friends who<br>are looking for a house</h2>
+
+        <div class="pets__list list">
+          <ul class="list__list">
+            <!-- Место для вставки карточек животных -->
+          </ul>
+        </div>
+
+        <div class="pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item pagination__item--active">
+              <a href="#" class="pagination__link button button--round button--pink">1</a></li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link button button--round button--pink">2</a></li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link button button--round button--pink">3</a></li>
+            <li class="pagination__item pagination__item--ellipsis">
+              <a href="#" class="pagination__link"><span class="visually-hidden">...</span></a></li>
+            <li class="pagination__item">
+              <a href="#" class="pagination__link button button--round">10</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrap container">
+      <div class="page-footer__contacts contacts">
+        <p class="contacts__slogan">For questions and suggestions</p>
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__item--email">
+            email@shelter.com
+          </li>
+          <li class="contacts__item contacts__item--phone">
+            +13 674 567 75 54
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__location location">
+        <p class="location__slogan">We are waiting for your visit</p>
+        <ul class="location__adresses">
+          <li class="location__boston">
+            Boston, Central Street, 1st (Entrance from the store)
+          </li>
+          <li class="location__london">
+            London, South Park, 18st
+          </li>
+        </ul>
+      </div>
+      <p class="page-footer__pic">
+        <img class="page-footer__img" src="img/dog-footer.png" width="300" height="316" alt="A licking puppy">
+      </p>
+    </div>
+  </footer>
+
+  <section class="modal modal-pet">
+    <button class="modal__close button--round">
+      <span class="visually-hidden">Закрыть</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 213 213">
+        <path d="M131.804 106.491l75.936-75.936c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.491 81.18 30.554 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.989 6.99-6.989 18.323 0 25.312l75.937 75.936-75.937 75.937c-6.989 6.99-6.989 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0l75.937-75.937 75.937 75.937c6.989 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.322 0-25.312l-75.936-75.936z"/>
+      </svg>
+    </button>
+    <h2 class="visually-hidden">Pet's description</h2>
+    <div class="pet__wrapper">
+      <p class="pet__pic">
+        <img class="pet-image" src="img/animal-1-card.jpg" width="470" height="470" alt="Jennifer the cat" title="Jennifer">
+      </p>
+      <div class="pet__desc">
+        <h3 class="pet__name">Jennifer</h3>
+        <p class="pet__breed">Pooch + Labrador</p>
+        <p class="pet__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nobis nemo, minima sapiente amet expedita voluptas asperiores. Iste, cupiditate, harum accusamus, quasi deserunt alias beatae ex magnam reprehenderit, culpa eius.</p>
+        <ul class="pet__params">
+          <li class="pet__param">
+            Age: 2 months
+          </li>
+          <li class="pet__param">
+            Inoculations: none
+          </li>
+          <li class="pet__param">
+            Diseases: none
+          </li>
+          <li class="pet__param">
+            Parasites: none
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Затенённый оверлей -->
+  <div class="modal-dark"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/render-content.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.site-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-list__item {
+  margin-left: 41px;
+}
+
+.site-list__item:nth-child(2) {
+  margin-left: 38px;
+}
+
+.site-list__item--active {
+  border-bottom: 3px solid @logo-color;
+  color: #292929;
+}
+
+.site-list__link {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 29px;
+  color: @main-text;
+}
+
+.page--main .site-list__link:hover {
+  color: #f1cdb3;
+}
+
+.page--pets .site-list__link:hover {
+  color: #000000;
+}
+
+.page--pets .site-list__link {
+  color: @nav-link;
+}

@@ -1,0 +1,92 @@
+.donation {
+  padding-top: 61px;
+  padding-bottom: 81px;
+  background-color: @bg-pets;
+}
+
+.donation__wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.donation__pic {
+  width: 505px;
+  height: 261px;
+
+  margin: 0 62px 0 17px;
+  padding: 24px 0 0 0;
+}
+
+.donation__desk {
+  width: 390px;
+}
+
+.donation__slogan {
+  margin: 0 0 24px 0;
+
+  font-family: "Georgia", serif;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: @nav-link;
+}
+
+.donation__bank {
+  margin: 0 0 14px 0;
+
+  font-family: "Georgia", serif;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  color: @nav-link;
+  letter-spacing: 1.1px;
+}
+
+.donation__requisites {
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  background-color: @bg-button-pink;
+
+  margin: 0 0 29px 0;
+  padding-left: 57px;
+  padding-bottom: 2px;
+
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 45px;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  color: @button-text;
+
+  border-radius: 10px;
+}
+
+.donation__requisites::before {
+  position: absolute;
+  content: "";
+
+  top: 10px;
+  left: 15px;
+  width: 30px;
+  height: 24px;
+  background-size: 31px 28px;
+
+  background-image: url("../img/credit-card.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.donation__legal {
+  width: 350px;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 18px;
+  color: @light-gray;
+  font-style: italic;
+}
