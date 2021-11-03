@@ -49,6 +49,6 @@
   "dependencies": {
     "csso": "^3.5.1",
     "natives": "^1.1.6",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   }
 }
